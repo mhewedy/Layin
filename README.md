@@ -1,34 +1,35 @@
 Layin
 =====
 
-It is as simple as possible, and very easy to use utility Layout class.
+It is as simple as possible, and very easy to use Servlet-based Layout Utility.
 
 ### Usage:
 
-** Filter 
-You should use the filter LayoutFilter.java in your web app.
+####Filter 
+You should use the filter [LayoutFilter.java](https://github.com/MuhammadHewedy/Layin/blob/master/WEB-INF/src/LayoutFilter.java) in your web app.
 
-** for layout file: 
-(example: https://github.com/MuhammadHewedy/Layin/blob/master/WEB-INF/layout/main_layout.jsp)
-
+####layout file: 
 In your layout file you have 4 request variables:
 
-1. requestScope.title: used as a placeholder for page title
-2. requestScope.script: used as a placeholder for javascirpts
-3. requestScope.body: used as a placeholder for body contents
-4. requestScope.path: has special use, as it should append any relative URL in the laytout file
+1. `requestScope.title`: Used as a placeholder for page title.
+2. `requestScope.script`: Used as a placeholder for javascript.
+3. `requestScope.body`: Used as a placeholder for body contents.
+4. `requestScope.path`: Has special use, as it should append any relative URL in the layout file.
+
+[Layout Example](https://github.com/MuhammadHewedy/Layin/blob/master/WEB-INF/layout/main_layout.jsp)
 
 
-** In the jsp pages that need to use the templates: 
-(example: https://github.com/MuhammadHewedy/Layin/blob/master/index.jsp)
+####JSP pages that uses the Layout
 
-1. Reference the layout file by setting attribute named "layout_file" in top of JSP page.
+1. Reference the layout file by setting attribute named `layout_file` in top of the JSP page.
 2. Then you will have three sections 
-  - @title contains the title 
-  - @script contains your javascirpts that need to have in your jsp (
-    - should include js in <script> tage.
-    - in js code, only comments that looks like /* ... */ is allowed.
-    - any js statement should ends with a semi colon.
-  - @body contains the HTML body of your JSP page
+  - `@title` contains the title of the JSP page.
+  - `@script` contains your javascirpts that need to have in your JSP:
+	    - Should include javascript in `<script>` tage.
+	    - In Javascript code, only comments that looks like `/* ... */` is allowed.
+	    - Any Javascript statement should ends with a semi colon.
+  - `@body` contains the HTML body of your JSP page.
+
+[JSP page Example](https://github.com/MuhammadHewedy/Layin/blob/master/index.jsp)
 
 
