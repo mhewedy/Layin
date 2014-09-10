@@ -23,7 +23,7 @@
 			
 			<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">Copyright © W3Schools.com</div>
 		</div>
-		<script src="${requestScope.path}../resources/jquery-1.11.0.min.js"></script>
+		<script src="${requestScope.path}../../resources/jquery-1.11.0.min.js"></script>
 		${requestScope.script}
 	</body>
 </html>
