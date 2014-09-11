@@ -4,8 +4,9 @@ Layin
 
 Suppose you have a webapp of 5 JSP pages, each the same header, footer and a left pane.
 
-You have 2 Option:
-1. To have the 5 pages contains the HTML code for the header, footer and left page, and when you need to change the footer, you have to change in the 5 pages.
+You have 2 Option:   
+
+1. To have the 5 pages contains the HTML code for the header, footer and left page, and when you need to change the footer, you have to change in the 5 pages.   
 2. To use some template engine like `freemarker`,  `Apache Velocity` or `Apache tiles`, but you need to face some learning curve, besides your webapp might be simple and you need to keep it simple.
 
 ####So what is the solution?
